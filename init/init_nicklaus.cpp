@@ -89,6 +89,10 @@ void vendor_load_properties()
     if (platform != ANDROID_TARGET)
         return;
 
+    //Set SKU model
+    std::string sku = property_get("ro.boot.hardware.sku");
+    property_set("ro.product.model", sku.c_str());
+
     check_device();
     num_sims();
 }
