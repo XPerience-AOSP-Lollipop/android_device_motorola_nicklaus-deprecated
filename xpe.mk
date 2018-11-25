@@ -23,8 +23,14 @@ $(call inherit-product, vendor/XPe/config/common_full_phone.mk)
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nicklaus
 PRODUCT_NAME := xpe_nicklaus
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := nicklaus
 PRODUCT_MANUFACTURER := nicklaus
+
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+ PRODUCT_NAME="Moto E⁴ Plus"
