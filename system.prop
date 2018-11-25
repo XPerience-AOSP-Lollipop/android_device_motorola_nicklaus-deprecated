@@ -108,6 +108,16 @@ ro.telephony.default_network=9,1
 persist.radio.apn_delay=5000
 mdc_initial_max_retry=10
 
+#VoLTE
+persist.mtk_ims_support=1
+ro.mtk_multiple_ims_support=1
+persist.mtk_wfc_support=1
+persist.mtk_volte_support=1
+persist.mtk.volte.enable=1
+persist.mtk_vilte_support=1
+ro.mtk_vilte_ut_support=0
+persist.mtk_ussi_support=1
+
 # Root
 service.adb.root=1
 persist.sys.root_access=0
