@@ -25,6 +25,9 @@ drm.service.enabled=true
 ro.config.vc_call_vol_steps=14
 ro.config.media_vol_steps=30
 
+#FRP
+ro.frp.pst=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp
+
 # LCD
 ro.sf.lcd_density=320
 
